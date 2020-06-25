@@ -17,6 +17,8 @@
   <!-- Place favicon.ico in the root directory -->
 
   <script src="https://kit.fontawesome.com/4b43d6ce6e.js" crossorigin="anonymous"></script>
+  <script src="js/flickity.pkgd.js"></script>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
@@ -60,9 +62,8 @@
       </div>
     </section>
     <section id='portfolio'>
-      <div class='content-wrapper slideshow'>
-        <i class="fas fa-chevron-left previous"></i>
-        <article class='slide initial'>
+      <div class='content-wrapper slideshow' data-flickity='{ "wrapAround": true }'>
+        <article class='slide'>
           <a href='https://claire-thompson.github.io/trivium-learning-site/'>
             <img src='img/trivium-thumbnail.png' alt='Trivium Learning thumbnail'>
             <p class='portfolio-names'>Trivium Learning Corporate Site</p>
@@ -98,7 +99,6 @@
             <p class='portfolio-names'>Election Results Map</p>
           </a>
         </article>
-        <i class="fas fa-chevron-right next"></i>
       </div>
     </section>
     <section id='skills'>
@@ -174,7 +174,6 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/flickity.pkgd.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
