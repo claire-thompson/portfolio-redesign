@@ -36,33 +36,50 @@
 
   <header>
     <div class='content-wrapper'>
-      <h2>Claire Thompson</h2>
-      <section>
-        <nav>
-          <h4><a href='#about'>About</a></h4>
-          <h4><a href='#portfolio'>Work</a></h4>
-          <h4><a href='#skills'>Skills</a></h4>
-          <h4><a href='#education'>Education</a></h4>
-          <h4><a href='#contact'>Contact</a></h4>
-        </nav>
-      </section>
+      <h2>Claire <span>Thompson</span></h2>
+      <i class="fas fa-bars" id='menu-button'></i>
     </div>
+    <nav id='nav'>
+      <ul id='nav-items'>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#portfolio'>Work</a></li>
+        <li><a href='#skills'>Skills</a></li>
+        <li><a href='#education'>Education</a></li>
+        <li><a href='#contact'>Contact</a></li>
+      </ul>
+    </nav>
+    <div class='color-bars teal'></div>
+    <div class='color-bars mustard'></div>
+    <div class='color-bars coral'></div>
+    <div class='color-bars burgundy'></div>
   </header>
   <main>
     <section id='about'>
-      <div class='content-wrapper'>
-        <h1>Hi, I'm Claire.</h1>
-        <h2>I'm a front-end web developer, designer, and creative thinker.</h2>
-        <p>Last winter, I rediscovered the love of coding I had as a child and left behind my previous life as an
-          English teacher to jump into the world of web development. I view writing code as just that -- writing. Coding
-          is as much a creative endeavor as a technical one and I find equal joy in creating a gorgeous layout in
-          Photoshop or Adobe XD and in building out the Javascript that makes that layout dynamic. When not coding, I
-          love to read, practice yoga, dance, watch RuPaul's Drag Race, and thorughly annoy my two cats.<br><br>
-          If you have any questions about my work or just want to chat, I'd love to hear from you!</p>
+      <div class='about-box'>
+        <div class='content-wrapper'>
+          <h1>Hi, I'm <span>Claire.</span></h1>
+          <img src='img/about.png' alt='Photo of a white woman in her mid-20s with purple hair and glasses'>
+          <h3>I'm a front-end web developer, designer, and creative thinker.</h3>
+          <p>Last winter, I rediscovered the love of coding I had as a child and left behind my previous life as an
+            English teacher to jump into the world of web development. I view writing code as just that -- writing.
+            Coding
+            is as much a creative endeavor as a technical one and I find equal joy in creating a gorgeous layout in
+            Photoshop or Adobe XD and in building out the Javascript that makes that layout dynamic. When not coding, I
+            love to read, practice yoga, dance, watch RuPaul's Drag Race, and thorughly annoy my two cats.<br><br>
+            If you have any questions about my work or just want to chat, I'd love to hear from you!</p>
+        </div>
       </div>
+      <div class='color-bars teal'></div>
+      <div class='color-bars mustard'></div>
+      <div class='color-bars coral'></div>
+      <div class='color-bars burgundy'></div>
     </section>
     <section id='portfolio'>
-      <div class='content-wrapper slideshow' data-flickity='{ "wrapAround": true }'>
+      <div class='content-wrapper'>
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class='slideshow' data-flickity='{ "wrapAround": true }'>
         <article class='slide'>
           <a href='https://claire-thompson.github.io/trivium-learning-site/'>
             <img src='img/trivium-thumbnail.png' alt='Trivium Learning thumbnail'>
@@ -101,9 +118,13 @@
         </article>
       </div>
     </section>
-    <section id='skills'>
+    <section class='skills' id='skills'>
+      <div class='color-bars teal'></div>
+      <div class='color-bars mustard'></div>
+      <div class='color-bars coral'></div>
+      <div class='color-bars burgundy'></div>
+      <h2>Coding Skills</h2>
       <div class='content-wrapper'>
-        <h2>Coding Skills</h2>
         <article>
           <img src='img/html.png' alt='HTML5 logo'>
           <h3>HTML 5</h3>
@@ -122,9 +143,9 @@
         </article>
       </div>
     </section>
-    <section>
+    <section class='skills'>
+      <h2>Design Skills</h2>
       <div class='content-wrapper'>
-        <h2>Design Skills</h2>
         <article>
           <img src='img/photoshop.png' alt='Adobe Photoshop logo'>
           <h3>Photoshop</h3>
@@ -144,11 +165,19 @@
       </div>
     </section>
     <section>
+      <div class='color-bars teal'></div>
+      <div class='color-bars mustard'></div>
+      <div class='color-bars coral'></div>
+      <div class='color-bars burgundy'></div>
       <h2>Education</h2>
     </section>
 
   </main>
   <footer>
+    <div class='color-bars teal'></div>
+    <div class='color-bars mustard'></div>
+    <div class='color-bars coral'></div>
+    <div class='color-bars burgundy'></div>
     <div class='content-wrapper'>
       <h2>Let's Connect</h2>
       <section>
@@ -160,14 +189,19 @@
       </section>
       <section>
         <h3>Follow Me</h3>
-        <a href='https://www.linkedin.com/in/claireethompson/'><i class="fab fa-linkedin"></i></a>
-        <a href='https://github.com/claire-thompson'><i class="fab fa-github-square"></i></a>
+        <div class='social'>
+          <a href='https://www.linkedin.com/in/claireethompson/'><i class="fab fa-linkedin"></i></a>
+          <a href='https://github.com/claire-thompson'><i class="fab fa-github-square"></i></a>
+        </div>
       </section>
       <section>
         <h3>Meet Me</h3>
         <p>Norwalk, CT</p>
         <p>Let's go to meetups together!</p>
       </section>
+      <div class='attribution'>
+        <p>Copyright 2020 - Claire Thompson</p>
+      </div>
     </div>
   </footer>
 

@@ -87,13 +87,176 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /************************** General Styles ************************/
+
    * { box-sizing: border-box; }
 
-   body { font-family: sans-serif; }
+   body { 
+     font-family: 'Montserrat', Arial, sans-serif;
+     background-color: #fbe0b6;
+     color: #6a0303;
+     font-size: 16px;
+    }
+
+    .content-wrapper {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1, h2, h3, h4, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      font-family: 'Lobster', script;
+      margin: 20px 0;
+      font-size: 2em;
+    }
+
+    a {
+      text-decoration: none;
+      color: #6a0303;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .color-bars {
+      width: 100%;
+      height: 5px;
+    }
+
+    .teal {
+      background-color: #2b9992;
+    }
+
+    .burgundy {
+      background-color: #6a0303;
+    }
+
+    .coral {
+      background-color: #ff8e68;
+    }
+
+    .mustard {
+      background-color: #edb321;
+    }
+
+    /****** Mobile Styles ******/
+
+    /* Header */
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header .content-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    header h2 {
+      font-size: 1.5em;
+    }
+
+    header h2 span {
+      color: #2b9992;
+    }
+
+    #menu-button {
+      font-size: 2em;
+     }
+  
+     nav {
+      background-color: #2b9992;
+      width: 100%;
+      justify-content: center;
+      height: 0px;
+      transition: all 0.3s ease-out;
+     }
+  
+     nav ul {
+       list-style-type: none;
+       padding: 0;
+       height: 0px;
+       overflow: hidden;
+       transition: all 0.3s ease-out;
+     }
+  
+     nav ul :hover {
+       text-decoration: underline;
+     }
+  
+     nav ul li {
+       padding: 10px 0;
+       text-transform: uppercase;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+  
+     nav ul li a {
+       color: #fbe0b6;
+     }
+
+     /* About */
+
+    .about-box {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #edb321;
+     box-shadow: 10px 10px 20px #7d6b4f;
+     width: 90%;
+     margin: 50px 0;
+     }
+
+     #about .content-wrapper {
+       align-items: flex-start;
+       margin: 20px 0 50px 0;
+     }
+
+     #about h1, img {
+       align-self: center;
+     }
+
+     #about img {
+       width: 80%;
+       border-radius: 100%;
+       margin: 10px 0 40px 0;
+     }
+
+     #about h3 {
+       margin: 0 0 20px 0;
+     }
+
+     /* Portfolio */
    
-   .slideshow {
-     padding: 50px 0;
-   }
+
+     section#portfolio {
+       display: block;
+       margin: 30px 0 50px 0;
+     }
+
+     #portfolio .content-wrapper {
+       width: 100%;
+     }
+
    
    .slide {
      display: flex;
@@ -103,15 +266,6 @@ textarea {
      margin-right: 10px;
      border-radius: 5px;
    }
-   
-   /* cell number */
-   .slide:before {
-     display: block;
-     text-align: center;
-     line-height: 200px;
-     font-size: 80px;
-     color: white;
-   }
 
    .slide a {
     display: flex;
@@ -119,10 +273,79 @@ textarea {
     align-items: center;
    }
 
+   .slide img {
+    height: 275px;
+   }
+
+   #portfolio p {
+     margin: 20px 0 0 0;
+   }
+
+   /* Skills */
+
+   .skills .content-wrapper {
+     flex-direction: row;
+     flex-wrap: wrap;
+     margin: 0 0 50px 0;
+   }
+
+   #skills .content-wrapper {
+     margin: 0;
+   }
+
+   .skills h2 {
+     margin: 50px 0 10px 0;
+   }
+
+   .skills article {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+   }
+
+   .skills img {
+     width: 70%;
+     margin:20px 0; 
+   }
+
+   /* Education */
 
 
+   /* Footer */
 
+   footer {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #6a0303;
+     color: #fbe0b6;
+   }
 
+   footer a {
+     color: #fbe0b6;
+   }
+
+   footer section {
+     margin: 20px 0;
+     width: 100%;
+   }
+
+   footer h3 {
+     margin: 0 0 10px 0;
+   }
+
+   .social {
+     display: flex;
+     justify-content: space-evenly;
+     width: 50%;
+     font-size: 3.5em;
+   }
+
+   .attribution {
+     font-size: 0.625em;
+     margin: 30px 0 10px 0;
+   }
 
 
 /* ==========================================================================
