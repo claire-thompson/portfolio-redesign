@@ -128,7 +128,7 @@ textarea {
     }
 
     a:hover {
-      text-decoration: underline;
+      border-bottom: 1px solid;
     }
 
     .color-bars {
@@ -171,9 +171,6 @@ textarea {
 
     header h2 {
       font-size: 1.5em;
-    }
-
-    header h2 span {
       color: #2b9992;
     }
 
@@ -195,10 +192,6 @@ textarea {
        height: 0px;
        overflow: hidden;
        transition: all 0.3s ease-out;
-     }
-  
-     nav ul :hover {
-       text-decoration: underline;
      }
   
      nav ul li {
@@ -241,7 +234,11 @@ textarea {
      }
 
      #about h3 {
-       margin: 0 0 20px 0;
+      margin: 0 20px 20px 20px;
+     }
+
+     #about p {
+       margin: 0 20px;
      }
 
      /* Portfolio */
@@ -259,7 +256,6 @@ textarea {
      #portfolio h2 {
       margin: 10px 0 30px 0;
      }
-
    
    .slide {
      display: flex;
@@ -284,15 +280,20 @@ textarea {
      margin: 20px 0 0 0;
    }
 
+   #portfolio p:hover {
+    border-bottom: 1px solid;
+  }
+
    /* Skills */
 
-   .skills .content-wrapper {
-     flex-direction: row;
-     flex-wrap: wrap;
-     margin: 0 0 50px 0;
+   #skills {
+    margin: 0 0 50px 0;
    }
 
    #skills .content-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 50px 0;
      margin: 0;
    }
 
@@ -346,6 +347,8 @@ textarea {
      align-items: center;
      background-color: #6a0303;
      color: #fbe0b6;
+     text-align: center;
+     width: 100%;
    }
 
    footer a {
@@ -462,8 +465,219 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/*********** Tablet Styles ************/
+
+@media only screen and (min-width: 768px) {
+  
+/* About */
+
+  #about .content-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 30% 50%;
+    grid-template-areas:  'hi photo'
+                          'tagline photo'
+                          'paragraph paragraph';
+  }
+
+  #about h1 {
+    grid-area: hi;
+    align-self: end;
+    margin: 0;
+  }
+
+  #about h3 {
+    grid-area: tagline;
+    margin: 20px 0;
+  }
+
+  #about img {
+    grid-area: photo;
+    align-self: center;
+    justify-self: center;
+    width: 65%;
+  }
+  
+  #about p {
+    grid-area: paragraph;
+    margin: 0 30px 0 0;
+  }
+
+
+  /* Skills */
+
+  #skills {
+    flex-direction: row;
+  }
+
+  .skills {
+    width: 50%;
+  }
+
+  .skills .content-wrapper {
+    width: 85%;
+  }
+
+  .skills .article {
+    width: 50%;
+  }
+
+  .skills img {
+    width: 35%;
+  }
+
+  /* Education */
+
+  #education .content-wrapper {
+    flex-direction: row;
+  }
+
+  #education article {
+    width: 50%;
+  }
+
+  /* Footer */
+
+  footer .content-wrapper {
+    flex-direction: row;
+  }
+
+  .social {
+    width: 75%;
+  }
+
+}
+
+
+/******** Desktop Styles ********/
+
+@media only screen and (min-width: 900px) {
+
+  /* Header */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  header .content-wrapper {
+    width: 25%;
+  }
+
+  header h2 {
+    font-size: 1.75em;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    height: unset;
+    width: 60%;
+    background-color: #fbe0b6;
+    transition: none;
+  }
+
+  nav ul {
+    height: unset;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    transition: none;
+  }
+
+  nav ul li a {
+    color: #6a0303;
+  }
+
+  /* About */
+
+  .about-box {
+    width: 85%;
+    padding: 30px 0;
+  }
+
+  #about .content-wrapper {
+    grid-template-rows: 15% 15% 60%;
+    grid-template-columns: 47% 50%;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-areas:  'hi paragraph'
+                          'tagline paragraph'
+                          'photo paragraph';
+    align-items: center;
+    margin: 10px 0 20px 0;
+  }
+
+  #about img {
+    align-self: flex-start;
+    justify-self: left;
+    width: 60%;
+    margin: 20px 0 0 0;
+  }
+
+  /* Education */
+
+  .education-box {
+    width: 75%;
+  }
+
+  #education .content-wrapper {
+    justify-content: space-evenly;
+  }
+
+  #education article{
+    width: 39%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+/* Header */
+
+header h2 {
+  font-size: 2em;
+}
+
+nav {
+  width: 50%;
+}
+
+/* About */
+
+.about-box {
+  width: 65%;
+}
+
+#about .content-wrapper {
+  grid-template-columns: 35% 65%;
+  grid-row-gap: 20px;
+}
+
+#about h3 {
+  margin: 20px 0;
+}
+
+#about img {
+  align-self: center;
+  justify-self: unset;
+  margin: 0 0 0 30px;
+}
+
+/* Education */
+
+.education-box {
+  width: 50%;
+}
+
 }
 
 @media print,
