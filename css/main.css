@@ -127,10 +127,6 @@ textarea {
       color: #6a0303;
     }
 
-    a:hover {
-      border-bottom: 1px solid;
-    }
-
     .color-bars {
       width: 100%;
       height: 5px;
@@ -204,6 +200,10 @@ textarea {
   
      nav ul li a {
        color: #fbe0b6;
+     }
+
+     nav ul li a:hover {
+       border-bottom: 1px solid;
      }
 
      /* About */
@@ -358,10 +358,15 @@ textarea {
    footer section {
      margin: 20px 0;
      width: 100%;
+     height: 80px;
    }
 
    footer h3 {
      margin: 0 0 10px 0;
+   }
+
+   footer a:hover {
+     border-bottom: 1px solid;
    }
 
    .social {

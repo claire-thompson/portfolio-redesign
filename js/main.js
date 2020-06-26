@@ -9,7 +9,7 @@ const toggleNav = () => {
         menuButton.className = 'fas fa-bars';
     } else {
         navMenu.style.height = '245px';
-        navItems.style.height = '200px';
+        navItems.style.height = '220px';
         menuButton.className = 'fas fa-times';
     }
 };
