@@ -3,7 +3,7 @@ const navMenu = document.getElementById('nav');
 const navItems = document.getElementById('nav-items');
 
 const toggleNav = () => {
-    if ((navMenu.className == 'visible') || (navMenu.style.height == 'unset')) {
+    if (navMenu.className == 'visible') {
         navItems.className = 'hidden'
         navMenu.className = 'hidden';
         menuButton.className = 'fas fa-bars';
