@@ -93,8 +93,8 @@ textarea {
 
    body { 
      font-family: 'Montserrat', Arial, sans-serif;
-     background-color: #fbe0b6;
-     color: #6a0303;
+     background-color: #fff;
+     color: #666666;
      font-size: 16px;
     }
 
@@ -112,40 +112,33 @@ textarea {
     }
 
     h1, h2, h3, h4, p {
-      margin: 0;
       padding: 0;
     }
 
+    h1 {
+      margin: 30px 0 20px 0;
+    }
+
     h1, h2 {
-      font-family: 'Lobster', script;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 400;
+      color: #2b9992;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      letter-spacing: 5px;
+    }
+
+    h3, p {
       margin: 20px 0;
-      font-size: 2em;
+      font-weight: 400;
     }
 
     a {
       text-decoration: none;
-      color: #6a0303;
-    }
-
-    .color-bars {
-      width: 100%;
-      height: 5px;
-    }
-
-    .teal {
-      background-color: #2b9992;
-    }
-
-    .burgundy {
-      background-color: #6a0303;
-    }
-
-    .coral {
-      background-color: #ff8e68;
-    }
-
-    .mustard {
-      background-color: #edb321;
+      color: #2b9992;
     }
 
     /****** Mobile Styles ******/
@@ -162,12 +155,7 @@ textarea {
     header .content-wrapper {
       flex-direction: row;
       justify-content: space-between;
-      height: 80px;
-    }
-
-    header h2 {
-      font-size: 1.5em;
-      color: #2b9992;
+      height: 120px;
     }
 
     #menu-button {
@@ -181,6 +169,7 @@ textarea {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      transition: all 0.3s ease-out;
      }
   
      #nav-items {
@@ -191,14 +180,11 @@ textarea {
        display: flex;
        flex-direction: column;
        justify-content: center;
+       transition: all 0.3s ease-out;
      }
 
      .hidden {
        height: 0px;
-     }
-
-     .visible {
-       transition: all 0.3s ease-out;
      }
 
      nav .visible {
@@ -206,19 +192,19 @@ textarea {
      }
 
      #nav-items .visible {
-       height: 220px; 
+       height: 220px;
      }
   
      nav ul li {
        padding: 10px 0;
-       text-transform: uppercase;
+       text-transform: lowercase;
        display: flex;
        flex-direction: column;
        align-items: center;
      }
   
      nav ul li a {
-       color: #fbe0b6;
+       color: #fff;
      }
 
      nav ul li a:hover {
@@ -227,19 +213,9 @@ textarea {
 
      /* About */
 
-    .about-box {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     background-color: #edb321;
-     box-shadow: 10px 10px 20px #7d6b4f;
-     width: 90%;
-     margin: 50px 0;
-     }
-
      #about .content-wrapper {
        align-items: flex-start;
-       margin: 20px 0 50px 0;
+       margin: 10px 0 50px 0;
      }
 
      #about h1, img {
@@ -247,9 +223,9 @@ textarea {
      }
 
      #about img {
-       width: 80%;
+       width: 50%;
        border-radius: 100%;
-       margin: 10px 0 40px 0;
+       margin: 20px 0 40px 0;
      }
 
      #about h3 {
@@ -273,7 +249,7 @@ textarea {
      }
 
      #portfolio h2 {
-      margin: 10px 0 30px 0;
+      margin: 0 0 30px 0;
      }
    
    .slide {
@@ -305,10 +281,6 @@ textarea {
 
    /* Skills */
 
-   #skills {
-    margin: 0 0 50px 0;
-   }
-
    #skills .content-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -317,7 +289,7 @@ textarea {
    }
 
    .skills h2 {
-     margin: 50px 0 10px 0;
+     margin: 30px 0 10px 0;
    }
 
    .skills article {
@@ -332,29 +304,8 @@ textarea {
      margin:20px 0; 
    }
 
-   /* Education */
-
-   .education-box {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     background-color: #ff8e68;
-     width: 90%;
-     margin: 50px 0;
-     padding: 20px 0 50px 0;
-     box-shadow: 10px 10px 20px #7d6b4f;
-   }
-
-   #education article {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-     margin: 20px 0;
-   }
-
-   #education h3, h4 {
-     margin: 0 0 10px 0;
+   .coding {
+     margin: 0 0 30px 0;
    }
 
 
@@ -364,24 +315,31 @@ textarea {
      display: flex;
      flex-direction: column;
      align-items: center;
-     background-color: #6a0303;
-     color: #fbe0b6;
      text-align: center;
      width: 100%;
-   }
-
-   footer a {
-     color: #fbe0b6;
+     margin: 60px 0 0 0;
    }
 
    footer section {
      margin: 20px 0;
      width: 100%;
-     height: 80px;
+   }
+
+   footer a {
+     color: #666666;
+   }
+
+   footer h2 {
+    word-spacing: 5px;
+    margin: 20px 0;
    }
 
    footer h3 {
      margin: 0 0 10px 0;
+   }
+
+   footer p {
+     margin: 10px 0;
    }
 
    footer a:hover {
@@ -409,10 +367,6 @@ textarea {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -492,13 +446,23 @@ textarea {
 /*********** Tablet Styles ************/
 
 @media only screen and (min-width: 768px) {
+
+  /* Header */
+
+  header .content-wrapper {
+    width: 85%;
+  }
   
 /* About */
 
+.content-wrapper {
+  width: 75%;
+}
+
   #about .content-wrapper {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 30% 50%;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:  'hi photo'
                           'tagline photo'
                           'paragraph paragraph';
@@ -519,12 +483,13 @@ textarea {
     grid-area: photo;
     align-self: center;
     justify-self: center;
+    margin: 0 0 25px 0;
     width: 65%;
   }
   
   #about p {
     grid-area: paragraph;
-    margin: 0 30px 0 0;
+    margin: 0;
   }
 
 
@@ -550,20 +515,11 @@ textarea {
     width: 35%;
   }
 
-  /* Education */
-
-  #education .content-wrapper {
-    flex-direction: row;
-  }
-
-  #education article {
-    width: 50%;
-  }
-
   /* Footer */
 
   footer .content-wrapper {
     flex-direction: row;
+    width: 90%;
   }
 
   .social {
@@ -586,16 +542,17 @@ textarea {
   }
 
   header {
-    width: 90%;
+    width: 85%;
     justify-content: space-between;
+    margin: 0 0 30px 0;
   }
 
   header .content-wrapper {
-    width: 25%;
+    width: 33%;
   }
 
   header h2 {
-    font-size: 1.75em;
+    font-size: 1.25em;
   }
 
   #menu-button {
@@ -604,13 +561,13 @@ textarea {
 
   .hidden {
     height: unset;
-    display: flex !important;
+    display: flex;
+    transition: none;
   }
 
   nav {
-    width: 60%;
-    background-color: #fbe0b6;
-    transition: none;
+    width: 50%;
+    background-color: #fff;
   }
 
   #nav-items {
@@ -618,53 +575,43 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    transition: none;
     margin: 0;
     height: 45px;
   }
 
   nav ul li a {
-    color: #6a0303;
+    color: #2b9992;
   }
 
   /* About */
 
-  .about-box {
+  #about .content-wrapper {
     width: 85%;
-    padding: 30px 0;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas:
+        'hi paragraph'
+        'photo paragraph'
+        'tagline paragraph';
+    align-items: center;
+    justify-items: center;
+    margin: 10px 0 20px 0;
   }
 
-  #about .content-wrapper {
-    grid-template-rows: 15% 15% 60%;
-    grid-template-columns: 47% 50%;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    grid-template-areas:  'hi paragraph'
-                          'tagline paragraph'
-                          'photo paragraph';
-    align-items: center;
-    margin: 10px 0 20px 0;
+  #about h3 {
+    text-align: center;
+    width: 70%;
   }
 
   #about img {
     align-self: flex-start;
-    justify-self: left;
-    width: 60%;
+    width: 40%;
     margin: 20px 0 0 0;
   }
 
-  /* Education */
-
-  .education-box {
-    width: 75%;
-  }
-
-  #education .content-wrapper {
-    justify-content: space-evenly;
-  }
-
-  #education article{
-    width: 39%;
+  #about p {
+    align-self: start;
   }
 
 }
@@ -692,6 +639,10 @@ nav {
 #about .content-wrapper {
   grid-template-columns: 35% 65%;
   grid-row-gap: 20px;
+  grid-template-areas:
+        'hi .'
+        'photo paragraph'
+        'tagline paragraph';
 }
 
 #about h3 {
@@ -702,12 +653,6 @@ nav {
   align-self: center;
   justify-self: unset;
   margin: 0 0 0 30px;
-}
-
-/* Education */
-
-.education-box {
-  width: 50%;
 }
 
 }
