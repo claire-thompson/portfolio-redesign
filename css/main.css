@@ -117,6 +117,7 @@ textarea {
 
     h1 {
       margin: 30px 0 20px 0;
+      text-transform: lowercase;
     }
 
     h1, h2 {
@@ -126,7 +127,7 @@ textarea {
     }
 
     h2 {
-      text-transform: uppercase;
+      text-transform: lowercase;
       font-size: 1.5em;
       letter-spacing: 5px;
     }
@@ -156,6 +157,10 @@ textarea {
       flex-direction: row;
       justify-content: space-between;
       height: 120px;
+    }
+
+    header h2 {
+      text-transform: uppercase;
     }
 
     #menu-button {
